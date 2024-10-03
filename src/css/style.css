@@ -1,3 +1,4 @@
+
 html, body, #home {
     min-height: 100vh;
 }
@@ -164,6 +165,13 @@ nav.navbar-transparencia {
     color: black;
     scale: 1.2;
 }
+
+button.carousel-control-prev, button.carousel-control-next {
+    text-decoration: none;
+    width: 6%;
+}
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

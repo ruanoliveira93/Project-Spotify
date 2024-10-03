@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="https://kit.fontawesome.com/65b5457390.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    
+
     <div style="width: 100%; min-height: 100vh;">
         <header>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-transparencia">
@@ -57,9 +56,33 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center text-wrap">
-                            <h1 class="text-white display-2 fw-bold text-uppercase">Música para todos</h1>
-                            <a class="btn btn-danger btn-lg rounded-5 fw-bold m-2" name="botao" href="#">Aproveite o Spotify Free</a>
-                            <a class="btn btn-outline-light btn-lg rounded-5 fw-bold m-2" href="#">Obter Spotify Premium</a>
+                            <div id="carousel-controles" class="carousel slide" data-bs-ride="carousel" style="height: 240px;">
+                                <div class="carousel-indicators">
+                                  <button data-bs-target="#carousel-controles" type="button" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button data-bs-target="#carousel-controles" type="button" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <h1 class="text-white display-2 fw-bold text-capitalize">Música para todos</h1>
+                                        <a class="btn btn-danger btn-lg rounded-5 fw-bold m-2" name="botao"
+                                            href="#">Aproveite o Spotify Free</a>
+                                            <a class="btn btn-outline-light btn-lg rounded-5 fw-bold m-2" href="#"><i class="fas fa-music"></i> Obter
+                                                Spotify Premium</a>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <h1 class="text-white display-2 fw-bold text-capitalize">As melhores rádios</h1>
+                                        <a class="btn btn-outline-light btn-lg rounded-5 fw-bold m-2" href="#">Ouça agora</a>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" data-bs-target="#carousel-controles" type="button" data-bs-slide="prev">
+                                  <span class="fas fa-angle-left fa-3x" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" data-bs-target="#carousel-controles" type="button" data-bs-slide="next">
+                                  <span class="fas fa-angle-right fa-3x" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </button>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -85,16 +108,19 @@
                                     <img src="/src/img/img4.jpg" class="img-fluid d-none d-md-block mb-4" alt="">
                                 </div>
                             </div>
-                            </div>
+                        </div>
                         <div class="col-md-6">
                             <h2>O que o Spotify tem?</h2>
 
                             <h3>Músicas</h3>
-                            <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+                            <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e
+                                reúna seus favoritos em um só lugar.</p>
                             <h3>Playlists</h3>
-                            <p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.</p>
+                            <p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e
+                                especialistas da música.</p>
                             <h3>Novos lançamentos</h3>
-                            <p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+                            <p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no
+                                Top 50.</p>
                         </div>
                     </div>
                 </div>
@@ -108,9 +134,11 @@
                             <h3>Buscar</h3>
                             <p>Já sabe o que quer escutar? É só procurar e apertar o play.</p>
                             <h3>Navegar</h3>
-                            <p>Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento.</p>
+                            <p>Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o
+                                seu momento.</p>
                             <h3>Descobrir</h3>
-                            <p>Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.</p>
+                            <p>Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe
+                                e curta uma das rádios.</p>
                         </div>
                         <div class="col-md-8">
                             <div class="row d-none d-md-flex mt-md-4 rotacionar">
@@ -208,9 +236,9 @@
     <!-- CDN jsDelivr -->
     <script src="/node_modules/html5shiv/dist/html5shiv-printshiv.min.js"></script>
     <script src="/node_modules/html5shiv/dist/html5shiv.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
